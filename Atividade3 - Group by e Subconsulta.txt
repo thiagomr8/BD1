@@ -1,0 +1,4 @@
+SELECT relacao FROM dependente group by relacao;
+SELECT sexo FROM dependente GROUP BY sexo;
+SELECT sexo, count(*) FROM dependente GROUP BY sexo;
+SELECT MAX(salario) FROM empregado;
