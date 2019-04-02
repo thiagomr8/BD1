@@ -2,3 +2,10 @@ SELECT relacao FROM dependente group by relacao;
 SELECT sexo FROM dependente GROUP BY sexo;
 SELECT sexo, count(*) FROM dependente GROUP BY sexo;
 SELECT MAX(salario) FROM empregado;
+SELECT MIN(salario) FROM empregado;
+SELECT SUM(salario) FROM empregado;
+SELECT * FROM EMPREGADO;
+SELECT depto, SUM(salario) FROM empregado GROUP BY depto;
+SELECT AVG(salario), SUM(salario), MAX(SALARIO), MIN(salario), STDDEV(salario) FROM empregado;
+
+SELECT empregado.nome_completo, COUNT(dependente.rg_responsavel) FROM dependente INNER JOIN empregado;
